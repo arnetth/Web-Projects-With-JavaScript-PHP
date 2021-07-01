@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project 2</title>
+<style type="text/css">
+		body {
+			background-color: #595959;
+			font-family: Centaur, "Footlight MT Light", "Goudy Old Style", "Times New Roman", serif;
+			
+		}
+		
+	#wrapper {
+		background-color: #FFF;
+		padding: 20px;
+		margin: 0px 200px;
+
+	}
+	
+	h1 {
+		text-align: center;
+	}
+	
+	#footer {
+		background-color: #404040;
+		color: #FFF;
+		text-align: center;
+		font-style: italic;
+		padding: 50px;
+
+
+	}
+	
+	#images {
+		margin: 0px auto;
+		display: block;
+		text-align: center;
+	}
+		
+	#images img {
+		padding: 20px;
+		width: 200px;
+		height: 200px;
+	}
+	
+	#moon.grow, #borealis.grow {
+		width: 450px;
+		height: 450px;
+	}
+	
+		#dropdown {
+			position: absolute;
+			top: -150px;
+			left: 550px;
+			background-color: #ffffff;
+			padding: 20px;
+			border: 1px solid #000000;
+		}
+		
+		#dropdown.fixed {
+			position: fixed;
+		}
+		
+	
+	
+	@media screen and (max-width: 500px) {
+		
+	#wrapper {
+		margin: 0px 10px;
+	}
+
+	
+	#moon.grow, #borealis.grow {
+		width: 350px;
+		height: 350px;
+	}
+	
+		#dropdown {
+			left: 50px;
+		}
+	}
+	</style>
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+	<h1>AstronomyForGeeks.com</h1>
+	<div id="dropdown">Watch the lunar eclipse scheduled for December 25, 2020!<br/>See details <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0&ab_channel=cotter548" target="_blank">here</a>.<br/><br/><a href="#" id="close">Close</a></div>
+	
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			
+			// drop the dropdown div onto the screen
+			$("#dropdown").animate({
+				top: "+=400"
+			}, 2000);
+			
+			$("#dropdown").addClass("fixed");
+			
+			$("#star").animate({
+				width: '+=50' 
+			}, 3000);
+			
+			$("#meteor").animate({
+				left: '-1000' 
+			}, 4000);
+			
+			// close drop down div
+			$("#close").click(function(event){
+				// prevent the default functionality
+				event.preventDefault();
+				
+				// move the drop down back off screen
+				$("#dropdown").css("top", "-150px");
+			}); // end <a> click
+				
+			$("img[id='moon']").hover(function(){
+			// runs when the mouse is over the image
+			
+			$(this).addClass("grow");
+		}, function() {
+			
+			$(this).removeClass("grow");
+		});
+			
+			$("img[id='borealis']").hover(function(){
+			// runs when the mouse is over the image
+			
+			$(this).addClass("grow");
+			
+		}, function() {
+			
+			$(this).removeClass("grow");
+		});
+			
+			
+		}); // end ready event
+		
+	</script>
+	
+	<div id="images">
+		
+		<img src="images/moon-large.jpg" id="moon" alt="photo of moon" title="moon" />
+		<img src="images/borealis-large.jpg" id="borealis" alt="photo of aurora borealis" title="aurora borealis" />
+		
+		<h3><em>Hover over images for a better look!</em></h3>
+	</div>
+		<img id="star" src="images/star.png" style="text-align: center; width: 100px; margin: 0px auto; display: block;" title="star" alt="star" />
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum tincidunt mattis. Cras vitae nisl ac enim ornare lobortis. Duis faucibus elit luctus leo pretium, ut malesuada sapien ullamcorper. Quisque efficitur rutrum tortor sit amet ultricies. In vulputate orci orci, ut auctor lectus euismod vestibulum. Duis in dolor euismod, ullamcorper quam ut, interdum magna. Proin tincidunt ex vel dapibus vehicula. Phasellus fermentum augue commodo elit faucibus pretium. Integer molestie efficitur tortor vitae dictum. Nullam commodo, eros vitae pulvinar molestie, velit tortor ullamcorper erat, at vehicula risus lorem eu est. Suspendisse faucibus et lacus non fringilla.</p>
+
+<p>Fusce cursus ex vel purus aliquam iaculis a eget nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris et hendrerit purus, rhoncus porttitor purus. Praesent eu lacus et urna facilisis mollis. Proin egestas condimentum finibus. Nulla lorem eros, posuere non tortor a, semper varius turpis. Donec dignissim condimentum semper.</p>
+
+<p>Vestibulum pulvinar sagittis nibh, at aliquam magna vulputate sit amet. Vivamus nec pharetra magna. Donec imperdiet mauris neque, ac bibendum sem ultrices vel. Aenean at augue in ipsum euismod facilisis. Mauris scelerisque ultrices ex, nec porttitor sem varius ut. Duis elementum lobortis iaculis. Donec rutrum vulputate orci. Fusce tortor felis, auctor vel est in, elementum semper elit. Fusce interdum malesuada lorem, nec bibendum turpis tempus vel. Nunc sed lacus ante. Sed non ultricies mauris, in condimentum elit. Donec pretium blandit felis vel iaculis. Integer leo lectus, sodales ut magna nec, feugiat congue nisi. Cras viverra mi vel maximus faucibus. Nunc tempor sem feugiat libero scelerisque condimentum. Vestibulum vel metus eu turpis porta congue.</p>
+
+<p>Cras quis mauris congue, elementum erat eget, egestas odio. Phasellus quis varius felis. Donec euismod pretium diam, ac efficitur eros scelerisque vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer et orci purus. Fusce id ultricies felis. Nullam vitae est aliquet, sodales velit non, placerat elit. In interdum egestas nisl at auctor. Duis ac finibus risus.</p>
+
+<p>Sed vitae urna et nibh laoreet tempus. Phasellus vestibulum mauris nec interdum scelerisque. Integer vulputate augue sit amet ipsum viverra, vitae placerat neque viverra. Nunc id vestibulum sapien. Cras scelerisque nisi sit amet ligula placerat, sit amet egestas nisi tristique. Donec sit amet maximus magna. Phasellus vitae ante consequat, lobortis nisi nec, tincidunt metus. Etiam et ligula dictum, congue nisi et, condimentum urna. Aenean nec tortor magna. Suspendisse porttitor a lorem eget fermentum.</p>
+
+		<img src="images/meteor.png" id="meteor" title="meteor" alt="meteor" style="position: absolute; left: 2000px; top: 0px;" />
+	
+	</div>
+	<div id="footer">
+		<p>This website was created by Hannah Arnett for CGT 35300, fall 2020.</p>
+	</div>
+		
+</body>
+</html>
