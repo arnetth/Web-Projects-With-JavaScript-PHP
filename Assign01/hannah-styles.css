@@ -1,0 +1,48 @@
+/* Hannah CSS */
+
+body {
+	font-family: Georgia, Palatino, serif;
+	font-size: 12pt;
+	color: #00394d;
+	background-image: url("cool-background.png");
+	background-size: cover;
+	overflow: auto;
+}
+
+/* wrapper styles */
+
+#wrapper {
+	margin: 60px;
+	text-align: center;
+	background: white;
+}
+
+/* text styles */
+
+#text {
+	display: block;
+	padding: 10px;
+	float: left;
+}
+
+#text h1 {
+	font-family: "French Script MT", Palatino, serif;
+	font-size: 32pt;
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+	color: #00bfff;
+}
+
+/* image styles */
+
+#images {
+	margin: 10px;
+	
+}
+
+#images img {
+	text-align: center;
+	width: 275px;
+	height: 325px;
+	padding: 10px;
+}
