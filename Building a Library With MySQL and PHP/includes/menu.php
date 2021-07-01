@@ -1,0 +1,1 @@
+<p style="text-align: center;"><a href="select.php">Select All</a> | <a href="insert.php">Insert Book</a> | <a href="update.php">Update Book</a> | <a href="delete.php">Delete Book</a></p>
