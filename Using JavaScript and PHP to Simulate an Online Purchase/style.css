@@ -1,0 +1,155 @@
+/* Assignment 02 Styles */
+
+html, body, h1, form, fieldset, legend, ol, li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "High Tower Text", Arial, sans-serif;
+	font-size: 12pt;
+	color: #4d0026;
+	padding: 20px;
+	background-color: white;
+}
+
+h1 {
+	font-size: 24pt;
+	color: #cc0099;
+	text-shadow: 1px 1px #ff1a8c;
+	margin-bottom: 20px;
+}
+
+form#payment {
+	background-color: #ffcce6;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	counter-reset: fieldsets;
+	padding: 20px;
+	width: 600px;
+}
+
+form#payment fieldset {
+	border: none;
+	margin-bottom: 10px;
+}
+
+form#payment fieldset:last-of-type {
+	margin-bottom: 0;
+}
+
+form#payment legend {
+	font-size: 18pt;
+	color: #e60073;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+span#progress {
+	color: #ff1a8c;
+	font-size: 14pt;
+	padding-bottom: 10px;
+}
+
+form#payment > fieldset > legend:before {
+	content: "Step " counter(fieldsets) ": ";
+	counter-increment: fieldsets;
+}
+
+form#payment fieldset fieldset legend {
+	color: #ff0080;
+	font-size: 13pt;
+	font-weight: normal;
+	padding-bottom: 0;
+}
+
+form#payment ol li {
+	background-color: #ffb3d9;
+	border-color: #ff66b3;
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+
+form#payment ol ol li {
+	background-color: none;
+	border: none;
+	float: left;
+}
+
+form#payment label {
+	float: left;
+	font-size: 13pt;
+	width: 110px;
+}
+
+form#payment fieldset fieldset label {
+	background-color: none no-repeat left 50%;
+	line-height: 20px;
+	padding: 0 0 0 30px;
+	width: auto;
+}
+
+form#payment img {
+	width: 60px;
+	height: 40px;
+}
+
+form#payment fieldset fieldset label:hover {
+	cursor: pointer;
+}
+
+form#payment input:not([type=radio]) {
+	background-color: white;
+	border: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	outline: none;
+	padding: 5px;
+	width: 400px;
+}
+
+form#payment input:not([type=submit]):focus {
+	background-color: #ffe6f2;
+}
+
+form#payment input[type=radio] {
+	float: left;
+	margin-right: 2px;
+}
+
+form#payment button {
+	background-color: #ff66b3;
+	border: none;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	color: white;
+	display: block;
+	font-family: "Lucida Calligraphy", Arial, sans-serif;
+	letter-spacing: 1px;
+	margin: auto;
+	padding: 7px 25px;
+	font-size: 16pt;
+	text-shadow: 0px 1px 1px #000000;
+	text-transform: uppercase;
+}
+
+form#payment button:hover {
+	background-color: #cc0066;
+	cursor: pointer;
+}
+
+
