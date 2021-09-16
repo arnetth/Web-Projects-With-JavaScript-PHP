@@ -1,0 +1,108 @@
+/* Index Styles CSS */
+
+.page-section {
+	min-height: 100vh;
+	overflow: auto;
+	padding-bottom: 0px;
+}
+
+/* Responsive CSS */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.service-section {
+		padding: 20px;
+		text-align: center;
+		margin: 30px;
+	}
+	#logo {
+		margin: auto;
+		margin-top: -50px;
+		display: block;
+		width: 250px;
+	}
+	.examples-section {
+		padding: 10px;
+		text-align: center;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.fps-five, .fps-ten, .fps-sixty {
+		float: none;
+		padding: 10px;
+		width: 100%;
+	}
+	#game-five, #game-ten, #game-sixty {
+		width: 250px;
+		height: 175px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.service-section {
+		padding: 10px;
+		text-align: center;
+		margin: 50px;
+	}
+	#logo {
+		float: left;
+		display: block;
+		width: 250px;
+		padding-left: 0px;
+		padding-right: 50px;
+	}
+	.examples-section {
+		padding: 10px;
+		text-align: center;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.fps-five, .fps-ten, .fps-sixty {
+		float: none;
+		padding: 10px;
+		width: 100%;
+	}
+	#game-five, #game-ten, #game-sixty {
+		width: 250px;
+		height: 175px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.service-section {
+		margin: 10px 200px 10px 100px;
+		float: left;
+		text-align: left;
+	}
+
+	.service-section h3 {
+		padding-top: 50px;
+	}
+
+	#logo {
+		margin: 10px;
+		padding-right: 75px;
+		width: 250px;
+		height: 250px;
+		float: left;
+	}
+
+	.examples-section {
+		text-align: center;
+	}
+
+	.fps-five, .fps-ten, .fps-sixty {
+		float: left;
+		margin: auto;
+		width: 33.33%;
+		padding: 0px ;
+		padding-bottom: 50px;
+	}
+
+	#game-five, #game-ten, #game-sixty {
+		width: 250px;
+		height: 175px;
+	}
+}

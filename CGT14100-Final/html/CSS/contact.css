@@ -1,0 +1,143 @@
+/* About Styles CSS */
+
+/* Responsive CSS */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.page-section {
+		margin: 10px;
+		overflow: hidden;
+		display: block;
+	}
+	
+	.form {
+		padding: 0px;
+		background-color: #e6ecf0;
+		display: block;
+		margin: auto;
+		width: 80%;
+		text-align: center;
+	}
+	
+	.form h1 {
+		text-align: center;
+		padding-top: 30px;
+	}
+	
+	.req p {
+		color: red;
+		padding: 10px 20px 10px 20px;
+	}
+	
+	#contact {
+		padding: 0px 20px;
+	}
+	
+	#fname, #email, #phone, #texting, #message {
+		margin: 0px 15px 20px 0px;
+		display: block;
+		margin: auto;
+	}
+	
+	#message {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	
+	#submit {
+		padding: 12px 20px;
+		margin: 10px 20px 5px 0px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.page-section {
+		margin: 20px;
+		overflow: hidden;
+		display: block;
+	}
+	
+	.form {
+		padding: 0px;
+		float: left;
+		background-color: #e6ecf0;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.form h1 {
+		text-align: center;
+	}
+	
+	.req p {
+		color: red;
+		padding: 0px 20px 10px 20px;
+	}
+	
+	#contact {
+		padding: 0px 20px;
+		display: block;
+		margin: auto;
+	}
+	
+	#fname, #email, #phone, #texting, #message {
+		margin: 0px 15px 15px 0px;
+	}
+	
+	#fname, #email, #phone, #texting {
+		width: 45%;
+	}
+	
+	#message {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	
+	#submit {
+		padding: 12px 20px;
+		margin: 10px 20px 5px 0px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.page-section {
+		margin: 20px;
+		overflow: hidden;
+	}
+	
+	.form {
+		padding: 10px;
+		background-color: #e6ecf0;
+		text-align: center;
+		margin: auto;
+		display; block;
+		width: 40%;
+	}
+	
+	.req p {
+		color: red;
+		padding: 0px 20px 10px 20px;
+	}
+	
+	#contact {
+		padding: 0px 20px;
+		display: block;
+		margin: auto;
+	}
+	
+	#fname, #email, #phone, #texting, #message {
+		margin: 0px 15px 15px 0px;
+	}
+	
+	#message {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	
+	#submit {
+		padding: 12px 20px;
+		margin: 10px 20px 5px 0px;
+	}
+}

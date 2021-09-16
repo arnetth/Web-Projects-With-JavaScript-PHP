@@ -1,0 +1,158 @@
+/* Downloads Styles CSS */
+
+/* Responsive CSS */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.page-section {
+		overflow: hidden;
+		display: block;
+		margin: auto;
+	}
+	
+	.p-section {
+		text-align: center;
+		margin: 20px;
+	}
+	
+	#logo {
+		margin: auto;
+		display: block;
+		width: 200px;
+		height: 200px;
+	}
+	
+	.buttons {
+		margin: 30px 10px 50px 10px;
+	}
+	
+	.bfive, .bten, .bsixty {
+		margin: auto;
+		display: block;
+		margin: 75px 0px;
+	}
+	
+	#bfive, #bten, #bsixty {
+		border-radius: 50px;
+		margin: 100px 100px;
+		padding: 15px 30px;
+		text-align: center;
+		color: white;
+		background-color: #0195ff;
+		font-size: 20px;
+		text-decoration: none;
+		transition: 2s;
+	}
+	
+	#bfive:hover, #bten:hover, #bsixty:hover {
+		background-color: #a3d9ff;
+		font-size: 25px;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.page-section {
+		overflow: hidden;
+		display: block;
+		margin: auto;
+	}
+	
+	.p-section {
+		margin: 30px 50px;
+		padding: 30px;
+	}
+	
+	#logo {
+		width: 200px;
+		height: 200px;
+		padding-right: 30px;
+		margin: 10px;
+		float: left;
+	}
+	
+	.buttons {
+		margin: 0px 30px 100px 30px;
+		padding: 30px;
+	}
+	
+	.bfive, .bten, .bsixty {
+		margin: auto;
+		display: block;
+		width: 33.33%;
+		float: left;
+	}
+	
+	#bfive, #bten, #bsixty {
+		border-radius: 50px;
+		margin: 20px;
+		padding: 20px 50px;
+		text-align: center;
+		color: white;
+		background-color: #0195ff;
+		font-size: px;
+		text-decoration: none;
+		transition: 2s;
+	}
+	
+	#bfive:hover, #bten:hover, #bsixty:hover {
+		background-color: #a3d9ff;
+		font-size: 25px;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.page-section {
+		overflow: hidden;
+		display: block;
+	}
+	
+	.p-section {
+		margin: 30px 100px 50px 30px;
+		padding: 30px;
+	}
+	
+	#logo {
+		width: 250px;
+		height: 250px;
+		padding-right: 50px;
+		margin: 10px;
+		float: left;
+	}
+	
+	.buttons {
+		margin: 0px 30px 75px 30px;
+		padding: 20px;
+	}
+	
+	.bfive, .bten, .bsixty {
+		margin: auto;
+		display: block;
+		width: 33.33%;
+		float: left;
+	}
+	
+	#bfive, #bten, #bsixty {
+		border-radius: 50px;
+		margin: 20px 100px;
+		padding: 30px 60px;
+		text-align: center;
+		color: white;
+		background-color: #0195ff;
+		font-size: 20px;
+		text-decoration: none;
+		transition: 2s;
+	}
+	
+	#bfive:hover, #bten:hover, #bsixty:hover {
+		background-color: #a3d9ff;
+		font-size: 25px;
+		color: white;
+		text-decoration: none;
+	}
+}

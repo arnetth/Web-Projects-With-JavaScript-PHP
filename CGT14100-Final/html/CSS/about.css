@@ -1,0 +1,68 @@
+/* About Styles CSS */
+
+/* Responsive CSS */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.page-section {
+		margin: 10px 20px 30px 20px;
+		overflow: hidden;
+		display: block;
+	}
+	
+	.about {
+		text-align: center;
+	}
+	
+	#Joey, #Matt, #Hannah {
+		display: block;
+		margin: auto;
+		width: 45%;
+		height: 225px;
+		padding: 10px 0px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.page-section {
+		margin: 30px 50px;
+		overflow: hidden;
+		display: block;
+	}
+	
+	.about {
+		text-align: center;
+	}
+	
+	#Joey, #Matt, #Hannah {
+		display: block;
+		margin: auto;
+		width: 25%;
+		height: 250px;
+		padding: 30px;
+		float: left;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.page-section {
+		margin: 10px;
+		overflow: hidden;
+		display: block;
+	}
+	
+	.about {
+		float: left;
+		text-align: left;
+	}
+	
+	#Joey, #Matt, #Hannah {
+		float: left;
+		margin: 10px 0px 30px 0px;
+		width: 12%;
+		padding-bottom: 50px;
+		height: 250px;
+	}
+}

@@ -1,0 +1,71 @@
+/* Careers Styles CSS */
+
+/* Responsive CSS */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.page-section {
+		padding: 20px;
+		text-align: center;
+		clear: both;
+	}
+	
+	.p-section a {
+		text-decoration: none;
+		font-weight: 20;
+		color: #0195ff;
+	}
+	
+	#gif {
+		margin: auto;
+		display: block;
+		width: 300px;
+		height: 200px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.page-section {
+		margin: 20px;
+		padding: 50px;
+		text-align: center;
+		clear: both;
+	}
+	
+	.p-section a {
+		text-decoration: none;
+		font-weight: 20;
+		color: #0195ff;
+	}
+	
+	#gif {
+		margin: auto;
+		display: block;
+		width: 300px;
+		height: 200px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.page-section {
+		margin: 20px;
+		padding: 50px;
+		text-align: center;
+		clear: both;
+	}
+	
+	.p-section a {
+		text-decoration: none;
+		font-weight: 20;
+		color: #0195ff;
+	}
+	
+	#gif {
+		margin: auto;
+		display: block;
+		width: 300px;
+		height: 200px;
+	}
+}

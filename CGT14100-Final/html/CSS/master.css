@@ -1,0 +1,258 @@
+/* Master Styles CSS */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #282c30;
+	background-color: #FFF;
+	font-size: 14pt;
+}
+
+/* Header Styles */
+
+/* Responsive Styles */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.header {
+		background-image: url("../Images/dmfb.jpg");
+		background-size: 100% 125px;
+		min-height: 175px;
+		background-position: center;
+		background-repeat: no-repeat;
+		}
+	
+	.topnav {
+		padding-bottom: 225px;
+	}
+	
+	.topnav a {
+		float: right;
+		color: #0195ff;
+		text-align: center;
+		padding: 13px 6px;
+		margin: 0px 10px 10px 10px;
+		text-decoration: none;
+		font-size: 15px;
+		transition: none;
+	}
+	
+	.topnav a:hover {
+		font-size: 15px;
+		background-color: #e6ecf0;
+	}
+	
+	.dropdown {
+		float: right;
+		overflow: hidden;
+		margin: 0px 10px 10px 10px;
+		padding-bottom: 225px;
+	}
+
+	.dropdown .dropbtn {
+		font-size: 20px;
+		color: #0195ff;
+		padding: 13px 20px;
+		background-color: #e6ecf0;
+		font-family: inherit;
+		margin: 0;
+		transition: none;
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color: #e6ecf0;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #c9d1d6;
+	}
+
+	.dropdown-content a {
+		float: none;
+		color: #0195ff;
+		text-decoration: none;
+		display: block;
+		margin: 5px;
+		padding: 8px 12px;
+		text-align: center;
+		font-size: 18px;
+		transition: none;
+	}
+
+	.dropdown-content a:hover {
+		font-size: 18px;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.header {
+		background-image: url("../Images/dmfb.jpg");
+		background-size: 100% 150px;
+		min-height: 150px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	
+	.topnav a {
+		float: right;
+		color: #0195ff;
+		text-align: center;
+		padding: 13px 6px;
+		margin: 10px;
+		text-decoration: none;
+		font-size: 20px;
+		transition: none;
+	}
+	
+	.topnav a:hover {
+		font-size: 20px;
+		background-color: #e6ecf0;
+		color: #0195ff;
+	}
+	
+	.dropdown-content a {
+		margin-bottom: 0px;
+	}
+	
+	.dropdown {
+		float: right;
+		overflow: hidden;
+		margin: 10px;
+	}
+
+	.dropdown .dropbtn {
+		font-size: 20px;
+		color: #0195ff;
+		padding: 17px 20px;
+		background-color: #e6ecf0;
+		font-family: inherit;
+		margin: 0;
+		transition: none;
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color: #e6ecf0;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #c9d1d6;
+	}
+
+	.dropdown-content a {
+		float: none;
+		color: #0195ff;
+		text-decoration: none;
+		display: block;
+		margin: 5px;
+		padding: 8px 12px;
+		text-align: left;
+		font-size: 18px;
+		transition: none;
+	}
+
+	.dropdown-content a:hover {
+		font-size: 18px;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.header {
+		background-image: url("../Images/dmfb.jpg");
+		background-size: 100% 150px;
+		min-height: 150px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.topnav {
+		overflow: hidden;
+		padding-right: 20px;
+	}
+
+	.topnav a {
+		float: right;
+		color: #0195ff;
+		text-align: center;
+		padding: 13px 6px;
+		margin: 10px;
+		text-decoration: none;
+		font-size: 20px;
+		transition: 2s;
+	}
+
+	.topnav a:hover {
+		background-color: #e6ecf0;
+		color: #0195ff;
+		font-size: 35px;
+	}
+
+	.dropdown {
+		float: right;
+		overflow: hidden;
+		margin: 10px;
+	}
+
+	.dropdown .dropbtn {
+		font-size: 20px;
+		color: #0195ff;
+		padding: 17px 20px;
+		background-color: #e6ecf0;
+		font-family: inherit;
+		margin: 0;
+		transition: none;
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color: #e6ecf0;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #c9d1d6;
+	}
+
+	.dropdown-content a {
+		float: none;
+		color: #0195ff;
+		text-decoration: none;
+		display: block;
+		margin: 5px;
+		padding: 8px 12px;
+		text-align: left;
+		font-size: 18px;
+		transition: 2s;
+	}
+
+	.dropdown-content a:hover {
+		font-size: 25px;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+}
+
+/* Footer Styles */
+
+.footer {
+	background-color: #0195ff;
+	text-align: center;
+	font-size: 10pt;
+	line-height: 30px;
+	padding: 10px;
+	height: 150px;
+}

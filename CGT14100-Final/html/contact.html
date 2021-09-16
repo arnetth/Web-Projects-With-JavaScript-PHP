@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Contact</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link href="CSS/master.css" rel="stylesheet" type="text/css">
+	<link href="CSS/contact.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+		function validateForm(){
+			var errorMessage="";
+			var name = document.forms["conForm"]["txtName"].value;
+			var email = document.forms["conForm"]["txtEmail"].value;
+			var phone = document.forms["conForm"]["txtPhone"].value;
+			var message = document.forms["conForm"]["txtMessage"].value;
+			var atpos = email.indexOf("@");
+			var dotpos = email.lastIndexOf(".");
+			
+			if (name==null || name=="")
+			{
+				errorMessage = "First name is required. \
+";
+			}
+
+			if (email==null || email=="")
+			{
+				errorMessage += "Email address is required. \
+";
+			}
+
+			else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
+			{
+				errorMessage += "Please enter a valid email address. \
+";
+			}
+			
+			if (phone==null || phone=="")
+			{
+				errorMessage += "Phone number is required. \
+";
+			}
+			
+			if (message==null || message=="")
+			{
+				errorMessage += "Message is required. \
+";
+			}
+
+			if (errorMessage !="")
+			{
+				alert(errorMessage);
+				return false;
+			}
+}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="topnav">
+			<div class="dropdown">
+				<p class="dropbtn">More
+					<i class="fa fa-caret-down"></i>
+				</p>
+				<div class="dropdown-content">
+					<a href="about.html">About</a><br>
+					<a href="contact.html">Contact</a><br>
+					<a href="careers.html">Careers</a><br>
+					<a href="shop.html">Shop</a><br>
+				</div>
+			</div>
+			<a href="donate.html">Donate</a>
+			<a href="downloads.html">Downloads</a>
+			<a href="index.html">Home</a>
+		</div>
+	</div>
+	<div class="page-section">
+		<div class="form">
+			<h1>Contact us.</h1>
+			<form name="conForm" action="response.php" onsubmit="return validateForm()" method="post" id="contact">
+				<p>
+					<label for="fname">*First name:</label><br>
+					<input type="text" name="txtName" id="fname"><br>
+					
+					<label for="email">*Email:</label><br>
+					<input type="text" name="txtEmail" id="email"><br>
+					
+					<label for="phone">*Phone Number:</label><br>
+					<input type="text" name="txtPhone" id="phone"><br>
+					
+					<input type="checkbox" name="texting" id="texting"><br>
+					<label for="texting">Please check if we can send you text message.</label><br><br>
+					
+					<label for="message">Your message:</label><br>
+					<textarea name="txtMessage" rows="5" cols="30" id="message"></textarea>
+					
+					<input type="submit" value="Submit" id="submit">
+				</p>
+			</form>
+			<div class="req"><p>* fields are required.</p></div>
+		</div>
+	</div>
+	<div class="footer">
+		<p><i>Purdue University, CGT 14100 Project Spring 2020<br>
+		This is just a joke, nothing serious or dangerous.</i><br>
+		<a href="index.html">downloadmasframes.com</a>   |   <a href="contact.html">Contact Us</a></p>
+		<p><a href="http://validator.w3.org/check?uri=referer">
+		<img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Strict" height="31" width="88"></a>
+		</p>
+	</div>
+</body>
+</html>
